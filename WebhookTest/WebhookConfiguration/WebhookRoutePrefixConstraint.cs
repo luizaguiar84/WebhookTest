@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace WebhookTest
+namespace WebhookTest.WebhookConfiguration
 {
     public class WebhookRoutePrefixConstraint : IRouteConstraint
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace WebhookTest
+﻿namespace WebhookTest.WebhookConfiguration
 {
     public class WebhookOptions
     {

@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace WebhookTest
+namespace WebhookTest.Handlers
 {
-    [ApiController, Route("{prefix:webhookRoutePrefix}/[controller]"), Status(HttpStatusCode.Accepted)]
+    [ApiController, Route("{prefix:webhookRoutePrefix}[controller]"), Status(HttpStatusCode.Accepted)]
     public abstract class AcceptedHandler<TRequest>
     {
         [HttpPost, Route("")]

@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using WebhookTest.WebhookConfiguration;
 
-namespace WebhookTest
+namespace WebhookTest.ExtensionMethods
 {
     public static class IServiceCollectionExtension
     {
