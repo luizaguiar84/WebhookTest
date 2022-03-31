@@ -6,16 +6,16 @@ namespace WebhookTest.Webhooks
 {
     public class Yep : AcceptedHandler<HelloRequest>
     {
-        private readonly ILogger<Yep> logger;
+        private readonly ILogger<Yep> _logger;
 
         public Yep(ILogger<Yep> logger)
         {
-            this.logger = logger;
+            this._logger = logger;
         }
     
         public override Task Handle(HelloRequest request)
         {
-            this.logger.LogInformation($"Hello, {request.Teste}");
+            this._logger.LogInformation($"Hello, {request.Teste}");
             return Task.CompletedTask;
         }
     }

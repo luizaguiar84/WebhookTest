@@ -14,16 +14,16 @@ namespace WebhookTest.Handlers
     
     public class Status : ActionFilterAttribute
     {
-        private readonly HttpStatusCode statusCode;
+        private readonly HttpStatusCode _statusCode;
 
         public Status(HttpStatusCode statusCode)
         {
-            this.statusCode = statusCode;
+            this._statusCode = statusCode;
         }
 
         public override void OnActionExecuted(ActionExecutedContext context)
         {
-            context.Result = new StatusCodeResult((int) statusCode);
+            context.Result = new StatusCodeResult((int) _statusCode);
         }
     }
     
