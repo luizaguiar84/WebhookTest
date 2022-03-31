@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebhookTest.Handlers
 {
-    [ApiController, Route("{prefix:webhookRoutePrefix}[controller]")]
+    [ApiController, Route("wh[controller]")]
     public abstract class ResponseHandler<TRequest, TResponse>
     {
         [HttpPost, Route("")]

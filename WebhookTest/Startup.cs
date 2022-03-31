@@ -33,10 +33,10 @@ namespace WebhookTest
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "WebhookTest", Version = "v1"});
             });
             
-            services.AddWebhooks(o =>
-            {
-                o.RoutePrefix = "wh";
-            });
+            // services.AddWebhooks(o =>
+            // {
+            //     o.RoutePrefix = "wh";
+            // });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

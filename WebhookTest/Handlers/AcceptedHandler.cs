@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace WebhookTest.Handlers
 {
-    [ApiController, Route("{prefix:webhookRoutePrefix}[controller]"), Status(HttpStatusCode.Accepted)]
+    [ApiController, Route("wh[controller]"), Status(HttpStatusCode.Accepted)]
     public abstract class AcceptedHandler<TRequest>
     {
         [HttpPost, Route("")]
